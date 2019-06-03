@@ -6,8 +6,8 @@ $conn = mysqli_connect(
     'mydb'
 );
 
-$username = $_POST['username'];
-$password = $_POST['password'];
+$username = $_POST['id'];
+$password = $_POST['pw'];
 $sql = "INSERT INTO user(id,pw) VALUES ('".$username."','".$password. "')";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_array($result);
