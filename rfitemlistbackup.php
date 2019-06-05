@@ -7,7 +7,7 @@ $conn = mysqli_connect(
     'mydb'
 );
 
-$sql = "select * from rfitemlist";
+$sql = "select * from rfitemlist where id = '".$_SESSION['id']."'";
 $res = mysqli_query($conn, $sql);
 
 $result = array();
